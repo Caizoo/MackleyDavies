@@ -1,0 +1,35 @@
+.wrapper {
+    margin-bottom: 5%
+}
+
+.footer-bar {
+    width: 50%;
+    margin: auto !important
+}
+
+.footer-bar-2 {
+    width: 80%;
+    margin: auto !important
+}
+.slide-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0,0);
+}
+
+@media (max-width:600px){
+    .footer-mobile {
+        text-align: center!important;
+    }
+    .footer-mobile img {
+        float:none!important
+    }
+    .footer-bar {
+        width: 80%
+    }
+    .footer-bar-2 {
+        display: none;
+    }
+
+}
