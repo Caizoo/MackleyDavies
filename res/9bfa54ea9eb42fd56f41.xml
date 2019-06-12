@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<Slides>
+<slideNode jpegURL="ab6c103b396c.jpg" thumbURL="ab6c103b396ct.jpg" jpegWidth="711" jpegHeight="540"></slideNode>
+<slideNode jpegURL="29bbcb5451b3.jpg" thumbURL="29bbcb5451b3t.jpg" jpegWidth="720" jpegHeight="354"></slideNode>
+<slideNode jpegURL="a215a9c434cf.jpg" thumbURL="a215a9c434cft.jpg" jpegWidth="405" jpegHeight="540"></slideNode>
+<slideNode jpegURL="2cbf08c4fb5.jpg" thumbURL="2cbf08c4fb5t.jpg" jpegWidth="720" jpegHeight="466"></slideNode>
+<slideNode jpegURL="c1ae78ef94ca.jpg" thumbURL="c1ae78ef94cat.jpg" jpegWidth="683" jpegHeight="402"></slideNode>
+<slideNode jpegURL="8a6cef30288e.jpg" thumbURL="8a6cef30288et.jpg" jpegWidth="620" jpegHeight="477"></slideNode>
+<slideNode jpegURL="e9fd1e714c40.jpg" thumbURL="e9fd1e714c40t.jpg" jpegWidth="720" jpegHeight="456"></slideNode>
+<slideNode jpegURL="b1c557118954.jpg" thumbURL="b1c557118954t.jpg" jpegWidth="720" jpegHeight="540"></slideNode>
+<slideNode jpegURL="83d915f96971.jpg" thumbURL="83d915f96971t.jpg" jpegWidth="720" jpegHeight="540"></slideNode>
+<slideNode jpegURL="615a01cd9de0.jpg" thumbURL="615a01cd9de0t.jpg" jpegWidth="682" jpegHeight="540"></slideNode>
+<slideNode jpegURL="9dae3bd0702e.jpg" thumbURL="9dae3bd0702et.jpg" jpegWidth="720" jpegHeight="540"></slideNode>
+</Slides>
+<setup>
+	<infoNode 
+		sliderposxshift="false"
+		of=" of "
+		sec="sec"
+		PhotoWMax="800"
+		PhotoHMax="600"
+		captionx="400" 
+		captiony="505" 
+		mymusictrack = ""  
+		fontcolor="0x000000"
+		sliderposx = "375"
+		sliderposy = "550"
+		slideimagein="false"
+		sliderdoc = "false"
+		slidervis="true" 
+		verticalthumbs ="false" 
+		slideinimagenudge="false" 
+		thumbxLoc= "0"  
+		photoYLoc="-1" 
+		photoXLoc="0" 
+		thumbyLoc= "570" 
+		popslide="true" 
+		thumbsvis= "false" 
+		thumbsize= "50" 
+		thumbgap= "5"  
+		thumbygap= "0" 
+		thumbblocklength="1" 
+		blur="20"  
+		AutoHideControls = "true"
+		reflection="false" 
+		Autoplay="true"
+		Sliderdefault="6"
+		>
+	</infoNode>
+</setup>
+ 
