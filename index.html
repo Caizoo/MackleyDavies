@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Mackley Davies Associates</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -25,19 +25,17 @@
     <div class="parallax w3-mobile"></div>
     <div class="w3-padding wrapper" style="width:80%;height:auto;margin-left: auto;margin-right: auto">
 
-        <div class="w3-container w3-card-4" style="width:700px;height:700px;margin: auto">
-            <div class="w3-padding-64 slide-container" style="width:600px;height:600px"></div>
-                <img class="mySlides" src="res/slideshow_1.jpg" style="max-width:600px;max-height:600px">
-                <img class="mySlides" src="res/slideshow_2.jpg" style="max-width:600px;max-height:600px">
-                <img class="mySlides" src="res/slideshow_3.jpg" style="max-width:600px;max-height:600px">
-                <img class="mySlides" src="res/slideshow_4.jpg" style="max-width:600px;max-height:600px">
-                <img class="mySlides" src="res/slideshow_5.jpg" style="max-width:600px;max-height:600px">
-            </div>
-            
+        <div class="w3-container w3-card-4 slide-container" style="width:700px;height:700px;margin: auto">
+            <img class="mySlides" src="res/slideshow_1.jpg" style="max-width:600px;max-height:600px">
+            <img class="mySlides" src="res/slideshow_2.jpg" style="max-width:600px;max-height:600px">
+            <img class="mySlides" src="res/slideshow_3.jpg" style="max-width:600px;max-height:600px">
+            <img class="mySlides" src="res/slideshow_4.jpg" style="max-width:600px;max-height:600px">
+            <img class="mySlides" src="res/slideshow_5.jpg" style="max-width:600px;max-height:600px">
         </div>
+    </div>
 
 
-        <!-- End page content -->
+    <!-- End page content -->
     </div>
 
     <div class="footer w3-center">
@@ -76,21 +74,21 @@
 </body>
 
 <script>
-        var myIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 9000);    
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
         }
-        </script>
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 9000);
+    }
+</script>
 
 
 </html>
