@@ -18,6 +18,29 @@
     transform: translate(0,0);
 }
 
+.parallax {
+    /* The image used */
+    background-image: url("../res/main_banner3.jpg");
+  
+    /* Set a specific height */
+    min-height: 800px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    margin: auto;
+    margin-top: 2%;
+}
+
+@media (max-width:800px) {
+    .parallax {
+        min-height: 300px;
+    }
+}
+
 @media (max-width:600px){
     .footer-mobile {
         text-align: center!important;
@@ -29,6 +52,9 @@
         width: 80%
     }
     .footer-bar-2 {
+        display: none;
+    }
+    .parallax {
         display: none;
     }
 
