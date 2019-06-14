@@ -16,6 +16,8 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    width: 700px;
+    height: 700px;
 }
 .mySlides {
     margin: auto;
@@ -40,6 +42,10 @@
 @media (max-width:800px) {
     .parallax {
         min-height: 300px;
+    }
+    .slide-container {
+        width: 500px;
+        height: 500px;
     }
 }
 

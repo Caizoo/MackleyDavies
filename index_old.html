@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>Mackley Davies Associates</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div>
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile">Mackley Davies</a>
+            <div class="w3-right w3-mobile">
+                <a href="about_us.html" class="w3-bar-item w3-button w3-mobile">About Us</a>
+                <a href="" class="w3-bar-item w3-button w3-mobile">Services</a>
+                <a href="" class="w3-bar-item w3-button w3-mobile">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <!-- Page content -->
+    <div class="parallax w3-mobile"></div>
+    <div class="w3-padding wrapper" style="width:80%;height:auto;margin-left: auto;margin-right: auto">
+
+        <div class="w3-container w3-card-4 slide-container w3-mobile">
+            <img class="mySlides w3-mobile" src="res/slideshow_1.jpg" style="max-width:600px;max-height:600px">
+            <img class="mySlides w3-mobile" src="res/slideshow_2.jpg" style="max-width:600px;max-height:600px">
+            <img class="mySlides w3-mobile" src="res/slideshow_3.jpg" style="max-width:600px;max-height:600px">
+            <img class="mySlides w3-mobile" src="res/slideshow_4.jpg" style="max-width:600px;max-height:600px">
+            <img class="mySlides w3-mobile" src="res/slideshow_5.jpg" style="max-width:600px;max-height:600px">
+        </div>
+    </div>
+
+
+    <!-- End page content -->
+    </div>
+
+    <div class="footer w3-center">
+        <div class="w3-container w3-light-grey w3-padding footer-bar"></div>
+
+        <div class="w3-margin-top w3-margin-bottom w3-cell-row w3-mobile footer-mobile"
+            style="width:50%;margin-left: auto;margin-right: auto">
+            <div class="w3-container w3-cell w3-mobile" style="width:55%">
+                <img class="w3-image w3-left" src="res/landscape_institute.jpg">
+                <img class="w3-image w3-left" src="res/contruction_line.jpg">
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle w3-left-align w3-mobile footer-mobile"
+                style="font-size: small; line-height: 1">
+                <p>Mackley Davies Associates Ltd. Contact: 01873 831796</p>
+                <p>© All Rights Reserved 2018 Mackley Davies.</p>
+                <p>Website designed by Cai Davies.</p>
+            </div>
+        </div>
+
+        <!--
+            <div class="w3-bar w3-white">
+                <div class="w3-bar-item w3-right w3-left-align" style="font-size: small; line-height: 0.7">
+                    <p>Mackley Davies Associates Ltd. Contact: 01873 831796</p>
+                    <p>© All Rights Reserved 2018 Mackley Davies.</p>
+                    <p>Website designed by Cai Davies.</p>
+                </div>
+                <div class="w3-bar-item w3-right">
+                    <p>Images</p>
+                </div>
+            </div>
+            -->
+
+        <div class="w3-container w3-light-grey w3-padding footer-bar-2"></div>
+    </div>
+
+</body>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 9000);
+    }
+</script>
+
+
+</html>
