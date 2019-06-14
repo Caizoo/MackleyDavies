@@ -1,7 +1,18 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas:
+        "side content side2";
+}
+
 .side {
     grid-area: side;
 }
-
 .side2 {
     grid-area: side2;
 }
@@ -10,12 +21,46 @@
     grid-area: content;
 }
 
+.parallax_banner {
+    /* The image used */
+    background-image: url("../res/main_banner.png");
+  
+    /* Set a specific height */
+    min-height: 200px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
-.wrapper {
-    display: grid;
-    
-    grid-gap: 10px;
-    grid-template-areas:
-        "side content side2"
-        "side content side2";
+
+
+
+
+#title {
+    display: flex;
+    width:30%;
+    margin: auto;
+    flex-direction: column;
+}
+#title > p {
+    margin:auto;
+}
+
+/*TABLET*/
+@media (max-width:800px) {
+
+}
+
+/*PHONE*/
+@media (max-width:500px) {
+    .grid_wrapper {
+        grid-template-areas:
+            "content content content";
+    }
+    #banner {
+        display: none;
+    }
 }
