@@ -1,0 +1,14 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: "side" "title" "side";
+    margin: auto;
+}
+
+.side {
+    grid-area: side;
+}
+
+.title {
+    grid-area: title;
+}
