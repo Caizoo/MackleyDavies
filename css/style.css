@@ -1,14 +1,21 @@
-.main {
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-areas: "side" "title" "side";
-    margin: auto;
-}
-
 .side {
     grid-area: side;
 }
 
-.title {
-    grid-area: title;
+.side2 {
+    grid-area: side2;
+}
+
+.content {
+    grid-area: content;
+}
+
+
+.wrapper {
+    display: grid;
+    
+    grid-gap: 10px;
+    grid-template-areas:
+        "side content side2"
+        "side content side2";
 }
