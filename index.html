@@ -2,11 +2,15 @@
 <html>
 <title>Mackley Davies Associates</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> <!-- start zoomed in at 100%, can't zoom out more than 100%-->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<!-- start zoomed in at 100%, can't zoom out more than 100%-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/slideshow.js"></script>
 
-<body style="height:2000px">
+<!--TODO: TAKE OUT BODY HEIGHT WHEN FINISHED PAGE-->
+
+<body style="height:2000px" onload="carousel()">
     <div class="wrapper">
 
         <!-- HEADER -->
@@ -25,11 +29,13 @@
                 <img src="res/mackleydavies_logo.png">
             </div>
             <h1 id="title_main" class="title-item">Mackley Davies Associates Ltd.</h1>
-            <p id="title_under_english" class="title-item">Landscape Architecture . Environmental Planning . Tree Surveying</p>
+            <p id="title_under_english" class="title-item">Landscape Architecture . Environmental Planning . Tree
+                Surveying</p>
             <div class="h_line"></div>
-            <p id="title_under_welsh" class="title-item">Pensaerniaeth Tirwedd . Cynllunio Amgylcheddol . Arolygu Coed</p>
+            <p id="title_under_welsh" class="title-item">Pensaerniaeth Tirwedd . Cynllunio Amgylcheddol . Arolygu Coed
+            </p>
         </div>
-        
+
         <!-- MAIN BANNER -->
         <div id="banner" class="parallax_banner"></div>
         <div id="banner-mobile">
@@ -39,24 +45,40 @@
         </div>
 
         <div id="main_content" class="grid_wrapper">
-            <div class="side"></div><div id="main_text" class="content">
-                <p>Hello</p>
-            </div><div class="side2"></div>
+            <div class="side"></div>
+            <div class="side2"></div>
+            <div class="content">
+                <div id="main_text">
+                    <p>Mackley Davies Associates Ltd is a landscape architecture and tree surveying
+                        practice based in the Brecon Beacons National Park, South Wales</p>
 
-            <div id="slideshow_box"></div>
+                    <p>We offer: Landscape design, Environmental planning, Arboricultural surveys,
+                        Visual appraisal and impact assessment (LVIA), Landscape maintenance and
+                        management plans</p>
+                </div>
 
-            <div id="about_us_title"></div>
+                <div id="slideshow_box" class="w3-container w3-card-4 slide-container w3-mobile">
+                    <div class="slide-container w3-mobile">
+                        <img class="mySlides w3-mobile w3-animate-fading" src="res/slideshow_1.jpg">
+                        <img class="mySlides w3-mobile w3-animate-fading" src="res/slideshow_2.jpg">
+                        <img class="mySlides w3-mobile w3-animate-fading" src="res/slideshow_3.jpg">
+                        <img class="mySlides w3-mobile w3-animate-fading" src="res/slideshow_4.jpg">
+                        <img class="mySlides w3-mobile w3-animate-fading" src="res/slideshow_5.jpg">
+                    </div>
+                </div>
 
-            <div id="about_us_content"></div>
+                <div id="about_us_title">Hello</div>
 
-            <div id="services_title"></div>
+                <div id="about_us_content"></div>
 
-            <div id="services_content"></div>
+                <div id="services_title"></div>
 
-            <div id="contact_title"></div>
+                <div id="services_content"></div>
 
-            <div id="contact_content"></div>
+                <div id="contact_title"></div>
 
+                <div id="contact_content"></div>
+            </div>
         </div>
         <div id="footer"></div>
     </div>
