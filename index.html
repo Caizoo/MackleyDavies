@@ -2,11 +2,11 @@
 <html>
 <title>Mackley Davies Associates</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> <!-- start zoomed in at 100%, can't zoom out more than 100%-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/style.css">
 
-<body>
+<body style="height:2000px">
     <div class="wrapper">
 
         <!-- HEADER -->
@@ -20,13 +20,23 @@
         </div>
 
         <!-- TITLE -->
-        <div id="title" class="w3-mobile">
-            <p>Mackley Davies</p>
-            <p>etc.</p>
+        <div id="title">
+            <div id="logo_holder" class="title-item">
+                <img src="res/mackleydavies_logo.png">
+            </div>
+            <h1 id="title_main" class="title-item">Mackley Davies Associates Ltd.</h1>
+            <p id="title_under_english" class="title-item">Landscape Architecture . Environmental Planning . Tree Surveying</p>
+            <div class="h_line"></div>
+            <p id="title_under_welsh" class="title-item">Pensaerniaeth Tirwedd . Cynllunio Amgylcheddol . Arolygu Coed</p>
         </div>
         
         <!-- MAIN BANNER -->
         <div id="banner" class="parallax_banner"></div>
+        <div id="banner-mobile">
+            <div id="banner-mobile-container">
+                <img src="res/main_banner.png">
+            </div>
+        </div>
 
         <div id="main_content" class="grid_wrapper">
             <div class="side"></div><div id="main_text" class="content">

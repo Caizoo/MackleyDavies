@@ -1,3 +1,6 @@
+/* CLASSES */
+
+/* LAYOUT */
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -21,46 +24,86 @@
     grid-area: content;
 }
 
-.parallax_banner {
-    /* The image used */
-    background-image: url("../res/main_banner.png");
-  
-    /* Set a specific height */
-    min-height: 200px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-
-
-
-
-#title {
-    display: flex;
-    width:30%;
-    margin: auto;
-    flex-direction: column;
-}
-#title > p {
+.title-item {
     margin:auto;
 }
 
-/*TABLET*/
-@media (max-width:800px) {
 
+
+
+/* OTHER CLASSES */
+.parallax_banner {
+    /* The image used */
+    background-image: url("../res/slideshow_1.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/*PHONE*/
-@media (max-width:500px) {
-    .grid_wrapper {
-        grid-template-areas:
-            "content content content";
+.h_line {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1rem auto;
+    padding: 0;
+    width:90%;
+}
+
+
+
+/* IDS */
+#title {
+    display: flex;
+    width:35rem;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#title_main {
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+#banner-mobile {
+    display: none;
+}
+
+
+/*TABLET*/
+@media (max-width:900px) {
+    .w3-button:hover {
+        box-shadow: none!important;
+        background-color: inherit!important;
     }
     #banner {
         display: none;
+    }
+    #banner-mobile {
+        display: inline;
+    }
+    .grid_wrapper {
+        grid-template-columns: 1fr 20fr 1fr;
+    }
+}
+
+/*PHONE*/
+@media (max-width:600px) {
+    #banner-mobile {
+        display: none;   
+    }
+    #title {
+        width: 95%;
+    }
+    #title > h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 }
