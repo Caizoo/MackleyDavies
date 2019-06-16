@@ -238,8 +238,14 @@
     #banner-mobile {
         display: none;   
     }
+    #main_content {
+        width: 95%;
+    }
     #title {
         width: 95%;
+    }
+    #about_us_content {
+        width: 85%;
     }
     #title > h1 {
         font-size: 1.5rem;
