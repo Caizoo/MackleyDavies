@@ -31,48 +31,28 @@
 }
 .services_container {
     max-width:350px;
-    margin: auto;
+    margin: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .services_container > img {
     max-width: 350px;
     max-height: 350px;
     margin: auto;
     border-radius: 20px;
+    margin-bottom: 2rem;
 }
 .services_container > p {
     margin: auto;
 }
 
-
 #services_content {
-    display: grid;
-    width:85%;
-    margin: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:  
-        "landscape planning tree"
-        "landscape_text planning_text tree_text";
-    grid-column-gap: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-#service_landscape {
-    grid-area: landscape;
-}
-#service_planning {
-    grid-area: planning;
-}
-#service_tree {
-    grid-area: tree;
-}
-#landscape_text {
-    grid-area: landscape_text;
-}
-#planning_text {
-    grid-area: planning_text;
-}
-#tree_text {
-    grid-area: tree_text;
-}
-
 
 
 /* OTHER CLASSES */
@@ -296,6 +276,13 @@
     #footer {
         width:90%;
     }
+    #services_content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .services_container {
+        margin: auto;
+    }
 }
 
 /*TABLET*/
@@ -337,6 +324,12 @@
         max-width: 100px;
         border-radius: 50px;
     }
+    #our_faces {
+        flex-direction: column;
+    }
+    .face_container {
+        margin-bottom: 2rem;
+    }
 }
 
 /*PHONE*/
@@ -352,12 +345,6 @@
     }
     #about_us_content {
         width: 85%;
-    }
-    #our_faces {
-        flex-direction: column;
-    }
-    .face_container {
-        margin-bottom: 2rem;
     }
     #title > h1 {
         font-size: 1.5rem;
