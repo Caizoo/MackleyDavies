@@ -52,6 +52,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 2rem auto;
+    margin-bottom: 4rem;
 }
 
 
@@ -72,7 +74,7 @@
 }
 
 .h_line {
-    display: block;
+    display: inline-block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
@@ -82,12 +84,11 @@
 }
 .v_line {
     display: block;
-    width: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 0 auto;
+    border-left: 1px solid rgb(230, 230, 230);
+    margin: 0;
     padding: 0;
-    height: 90%;
+    height: auto;
+    margin: 1px;
 }
 .slide-container {
     margin: auto;
@@ -170,56 +171,41 @@
     font-size: 1.3rem;
 }
 #main_text {
-    margin:auto;
-    width: 50%;
+    margin: 6rem auto;
+    width: 800px;
 }
 #slideshow_box {
     width:700px;
     height: 600px;
-    margin: auto;
+    margin: 4rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
 }
-#about_us_seperator {
-    margin: auto;
-    margin-bottom: 10rem;
-}
 #about_us_content {
     width: 70%;
     margin: auto;
     font-size: 17px;
+    margin-bottom: 8rem;
 }
 #our_faces {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 6rem;
 }
 
 #contact_content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "contact_left contact_right";
-    width:70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:50rem;
     margin: auto;
-    grid-gap: 20%;
-}
-#contact_left {
-    grid-area: contact_left;
-    width: auto;
-}
-#contact_right {
-    grid-area: contact_right;
-    width: auto;
+    margin-bottom: 3rem;
 }
 #contact_content {
     font-size: 1rem;
-}
-#contact_seperator {
-    margin: auto;
-    height: 2rem;
 }
 #footer {
     width: 90rem;
@@ -337,6 +323,10 @@
         margin-bottom: 2rem;
     }
 
+    #contact_content {
+        width:95%;
+    }
+
     #footer_left {
         justify-content: space-evenly;
     }
@@ -357,6 +347,20 @@
     }
     #footer {
         width:100%;
+    }
+}
+
+@media (max-width:700px) {
+    #contact_content {
+        flex-direction: column;
+        width: 60%;
+    }
+    #contact_left {
+        margin-bottom: 2rem;
+        display: inline-block!important;
+    }
+    #contact_right {
+        width: auto;
     }
 }
 
@@ -389,17 +393,6 @@
     .content_title > h1 {
         font-size: 1.7rem;
     }
-    #services_content {
-        grid-template-rows: min-content;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "landscape"
-            "landscape_text"
-            "planning"
-            "planning_text"
-            "tree"
-            "tree_text";
-    }
 
 
     .services_container {
@@ -417,15 +410,6 @@
     .address_content {
         margin: 0 auto;
     }
-    #contact_content {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "contact_left"
-            "contact_right";
-        grid-column-gap: 0;
-        grid-row-gap: 2rem;
-    }
     #footer_content {
         grid-template-areas:  
             "footer_left"
@@ -434,6 +418,10 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         margin-top: 1rem;
+    }
+    #footer_right {
+        width: auto;
+        margin: auto;
     }
     #footer {
         width:100%;
