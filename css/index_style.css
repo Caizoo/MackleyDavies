@@ -55,21 +55,6 @@
 .face_container > p {
     margin: 0 auto;
 }
-
-.content_title {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: auto;
-}
-.content_title > h1 {
-    text-align: center;
-}
-.content_title > .h_line {
-    width: 15rem;
-    border-color: #aaa;
-}
 .address_content {
     margin: 0 auto;
 }
@@ -179,9 +164,6 @@
     }
     #about_us_content {
         width: 85%;
-    }
-    .content_title > h1 {
-        font-size: 1.7rem;
     }
     .services_container {
         max-width:300px;

@@ -72,6 +72,20 @@
     margin: 0 auto;
     padding: 0;
 }
+.content_title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+}
+.content_title > h1 {
+    text-align: center;
+}
+.content_title > .h_line {
+    width: 15rem;
+    border-color: #aaa;
+}
 
 
 /* IDS */
@@ -209,6 +223,9 @@
 
 /*PHONE*/
 @media (max-width:600px) {
+    .content_title > h1 {
+        font-size: 1.7rem;
+    }
     #banner-mobile {
         display: none;   
     }
