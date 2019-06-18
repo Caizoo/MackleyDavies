@@ -1,6 +1,10 @@
+.content_title > .h_line {
+    width:40rem;
+}
+
 .project_wrapper {
     width: 70rem;
-    margin: auto;
+    margin: 4rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -35,12 +39,13 @@
 .project_b_right {
     grid-area: b_right;
 }
+.content img {
+    box-shadow: 0 0 2rem rgb(202, 202, 202);
+}
 
 
 @media (max-width:1200px) {
-    .project_wrapper {
-        width:80%;
-    }
+    
 }
 
 
@@ -52,6 +57,12 @@
 
 /* PHONE */
 @media (max-width:600px) {
+    .content {
+        width:90%;
+    }
+    .content > div {
+        width:100%;
+    }
     .project_wrapper {
         display: flex;
         flex-direction: column;
