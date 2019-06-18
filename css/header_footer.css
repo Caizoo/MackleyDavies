@@ -1,0 +1,243 @@
+/* CLASSES */
+
+/* LAYOUT */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(252, 252, 252);
+}
+.grid_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr!important;
+    grid-template-areas:
+        "side content side2";
+}
+
+.side {
+    grid-area: side;
+}
+.side2 {
+    grid-area: side2;
+}
+
+.content {
+    grid-area: content;
+    margin:auto;
+}
+
+.title-item {
+    margin:auto;
+}
+
+/* OTHER CLASSES */
+.parallax_banner {
+    /* The image used */
+    background-image: url("../res/slideshow_1.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3rem;
+}
+
+.h_line {
+    display: inline-block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1rem auto;
+    padding: 0;
+    width:90%;
+}
+.v_line {
+    display: block;
+    border-left: 1px solid rgb(230, 230, 230);
+    margin: 0;
+    padding: 0;
+    height: auto;
+    margin: 1px;
+}
+
+.footer_bar {
+    display: block;
+    height: 15px;
+    border: 0;
+    background-color: rgb(240, 240, 240);
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* IDS */
+#title {
+    display: flex;
+    width:35rem;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#title_main {
+    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+#banner-mobile {
+    display: none;
+    margin-bottom: 3rem;
+}
+#main_content {
+    text-align: justify;
+    margin: auto;
+    font-size: 1.3rem;
+}
+#footer {
+    width: 90rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#footer_content {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10rem;
+    grid-template-areas: 
+        "footer_left footer_right";
+}
+#footer_left {
+    grid-area: footer_left;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+}
+.footer_left_img_container {
+    margin: 0 1rem 0 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#landscape_institute_img {
+    margin-left: 2rem;
+}
+#footer_left > img {
+    max-height: 98px;
+    width: auto;
+}
+#footer_right {
+    grid-area: footer_right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+#footer_right > p {
+    margin: 0;
+}
+#top_footer_bar {
+    width: 60%;
+}
+#bottom_footer_bar {
+    width: 100%;
+}
+
+@media (max-width:1450px) {
+    #footer {
+        width:90%;
+    }
+}
+
+/*TABLET*/
+@media (max-width:900px) {
+    .side {
+        display: none;
+    }
+    .side2 {
+        display: none;
+    }
+    .w3-button:hover {
+        box-shadow: none!important;
+        background-color: inherit!important;
+    }
+    #banner {
+        display: none;
+    }
+    #banner-mobile {
+        display: inline;
+    }
+    #main_content {
+        font-size: 1.1rem;
+    }
+    .grid_wrapper {
+        display: flex;
+        width:90%;
+    }
+    #footer_left {
+        justify-content: space-evenly;
+    }
+    #footer_right {
+        font-size: 0.6rem;
+    }
+    .footer_left_img_container {
+        margin: 0;
+    }
+    #landscape_institute_img {
+        margin: 0;
+    }
+    #footer_content {
+        width:70%;
+    }
+    #top_footer_bar {
+        width:70%;
+    }
+    #footer {
+        width:100%;
+    }
+}
+
+@media (max-width:700px) {
+
+}
+
+/*PHONE*/
+@media (max-width:600px) {
+    #banner-mobile {
+        display: none;   
+    }
+    #main_content {
+        width: 95%;
+    }
+    #title {
+        width: 95%;
+    }
+    #footer_content {
+        grid-template-areas:  
+            "footer_left"
+            "footer_right";
+        width:80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 1rem;
+    }
+    #footer_right {
+        width: auto;
+        margin: auto;
+    }
+    #footer {
+        width:100%;
+    }
+    #top_footer_bar {
+        width:80%;
+    }
+    #bottom_footer_bar {
+        width: 100%;
+    }
+}
