@@ -110,11 +110,12 @@
     margin: auto;
     text-align: center;
 }
-.face_container > img {
+.face_img {
     max-width: 150px;
     height: auto;
     border-radius: 75px;
     margin: auto;
+    margin-bottom: 2rem;
 }
 .face_container > p {
     margin: 0 auto;
@@ -312,7 +313,7 @@
         width:500px;
         height: 400px;
     }
-    .face_container > img {
+    .face_img {
         max-width: 100px;
         border-radius: 50px;
     }
