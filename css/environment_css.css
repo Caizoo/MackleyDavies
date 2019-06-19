@@ -37,7 +37,12 @@
         "t_left t_right";
 }
 
-
+@media (max-width:1200px) {
+    #lvia_01_flex img {
+        max-width: 30%;
+        height: auto;
+    }
+}
 
 @media (max-width:600px) {
     #lvia_01_flex {

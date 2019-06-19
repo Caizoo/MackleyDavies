@@ -48,27 +48,32 @@
 
 
 @media (max-width:1200px) {
-    
+    .side, .side2 {
+        display: none;
+    }
+    .content {
+        width:100%;
+    }
+    .content > div {
+        width:100%;
+    }
+    .grid_wrapper {
+        grid-gap: 0;
+    }
 }
 
 
 /* TABLET */
 @media (max-width:900px) {
-
-}
-
-
-/* PHONE */
-@media (max-width:600px) {
-    .content {
-        width:90%;
-    }
-    .content > div {
-        width:100%;
-    }
     .project_wrapper {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
+}
+
+
+/* PHONE */
+@media (max-width:600px) {
+
 }

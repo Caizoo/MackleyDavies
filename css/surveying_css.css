@@ -7,7 +7,6 @@
         "t_left t_left"
         "b_left b_right";
     grid-template-rows: auto;
-    grid-gap: 0;
 }
 #surveying_content div {
     justify-content: flex-start;
