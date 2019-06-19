@@ -11,13 +11,16 @@
     grid-template-areas: 
         "t_left t_right"
         "b_left b_right";
-    grid-gap: 30px;
+    grid-gap: 50px;
 }
 .project_wrapper div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+}
+.project_t_left {
+    justify-content: flex-start!important;
 }
 .project_wrapper img {
     display: inline-block;
@@ -40,7 +43,7 @@
     grid-area: b_right;
 }
 .content img {
-    box-shadow: 0 0 2rem rgb(202, 202, 202);
+    box-shadow: 0 0 4rem 1px rgb(202, 202, 202);
 }
 
 

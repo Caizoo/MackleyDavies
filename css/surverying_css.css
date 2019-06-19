@@ -1,20 +1,43 @@
+.project_wrapper {
+    margin: 0;
+}
+
 #surveying_content {
     grid-template-areas:  
         "t_left t_left"
-        "b_left b_right" 
+        "b_left b_right";
+    grid-template-rows: auto;
+    grid-gap: 0;
 }
+#surveying_content div {
+    justify-content: flex-start;
+}
+
 #planning_content {
-    grid-template-areas:  
-        "t_left t_right"
-        "t_left t_right";
-}
-#hazard_content {
     grid-template-areas:  
         "t_left t_right"
         "t_left b_right";
 }
-#woodland_management {
+#hazard_content {
     grid-template-areas:  
         "t_left t_right"
         "t_left t_right";
+}
+#woodland_content {
+    grid-template-areas:  
+        "t_left t_right"
+        "t_left t_right";
+}
+
+#tractor_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#tractor_container > img {
+    max-width: 40%;
+    margin: 1rem auto;
+    height: auto;
 }
