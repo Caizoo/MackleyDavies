@@ -6,7 +6,6 @@
     grid-template-areas:  
         "t_left t_right"
         "b_left b_left";
-    grid-template-rows: 2fr 1fr;
 }
 #lvia_01_flex {
     display: flex;
@@ -38,9 +37,11 @@
 }
 
 @media (max-width:1200px) {
-    #lvia_01_flex img {
-        max-width: 30%;
-        height: auto;
+    #lvia_01_flex {
+        flex-wrap: wrap;
+    }
+    #lvia_01_flex > img {
+        margin: 2rem auto
     }
 }
 

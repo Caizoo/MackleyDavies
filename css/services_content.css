@@ -6,8 +6,8 @@
     width: 70rem;
     margin: 4rem auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-template-areas: 
         "t_left t_right"
         "b_left b_right";

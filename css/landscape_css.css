@@ -3,10 +3,6 @@
     margin-bottom: 10rem;
 }
 
-#ashvale_content {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-}
 
 #cwmbach_content {
     grid-template-areas:  
