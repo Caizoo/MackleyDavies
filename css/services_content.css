@@ -1,5 +1,13 @@
+.wrapper {
+    margin-bottom: 10rem;
+}
+
 .content_title > .h_line {
     width:40rem;
+}
+
+.content_title {
+    margin-top: 8rem!important;
 }
 
 .project_wrapper {
@@ -60,15 +68,28 @@
     .grid_wrapper {
         grid-gap: 0;
     }
+    .content_title {
+        margin-top: 4rem!important;
+    }
 }
 
 
 /* TABLET */
 @media (max-width:900px) {
+    .content > div {
+        width: 90%;
+        margin: auto;
+    }
+    .content_title > .h_line {
+        width: 90%;
+    }
     .project_wrapper {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+    #title {
+        margin-bottom: 0!important;
     }
 }
 

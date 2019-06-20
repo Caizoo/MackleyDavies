@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .services_container {
     max-width:350px;
     margin: 0 1rem 1rem 1rem;
@@ -59,7 +63,7 @@
     margin: 0 auto;
 }
 #main_text {
-    margin: 6rem auto;
+    margin: 0 auto;
     width: 800px;
 }
 #slideshow_box {

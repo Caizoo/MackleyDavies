@@ -106,6 +106,10 @@
     display: none;
     margin-bottom: 3rem;
 }
+#banner-mobile img {
+    width: 100%;
+    height: auto;
+}
 #main_content {
     text-align: justify;
     margin: auto;
@@ -180,6 +184,9 @@
     .w3-button:hover {
         box-shadow: none!important;
         background-color: inherit!important;
+    }
+    #title {
+        margin-bottom: 3rem;
     }
     #banner {
         display: none;
